@@ -1,0 +1,243 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.hp.mycity"
+    android:targetSandboxVersion="2"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-sdk
+        android:minSdkVersion="23"
+        android:targetSdkVersion="28" />
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="com.google.android.providers.gsf.permission.READ_GSERVICES" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+
+    <uses-feature
+        android:name="android.hardware.location.gps"
+        android:required="true" />
+    <uses-feature
+        android:glEsVersion="0x00020000"
+        android:required="true" />
+
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="com.google.android.finsky.permission.BIND_GET_INSTALL_REFERRER_SERVICE" /> <!-- Required by older versions of Google Play services to create IID tokens -->
+    <uses-permission android:name="com.google.android.c2dm.permission.RECEIVE" />
+
+    <application
+        android:allowBackup="true"
+        android:appComponentFactory="android.support.v4.app.CoreComponentFactory"
+        android:debuggable="true"
+        android:fullBackupContent="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="My City"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:testOnly="true"
+        android:theme="@style/AppTheme" >
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="AIzaSyDUJHv0OIGVAYvBRK0q6FuNyDNvX0ccMmQ" />
+
+        <activity android:name="com.example.hp.mycity.My_CityHome" >
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.example.hp.mycity.MainActivity"
+            android:theme="@style/AppTheme" >
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+                <action android:name="android.intent.action.MYACTIVITY" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity android:name="com.example.hp.mycity.MapsActivity" />
+        <activity
+            android:name="com.example.hp.mycity.My_City2"
+            android:label="Education" />
+        <activity
+            android:name="com.example.hp.mycity.My_City3"
+            android:label="Medical Services" />
+        <activity
+            android:name="com.example.hp.mycity.My_City4"
+            android:label="Parks And Recreations" />
+        <activity
+            android:name="com.example.hp.mycity.My_City5"
+            android:label="Travel" />
+        <activity
+            android:name="com.example.hp.mycity.My_City6"
+            android:label="Prayer Rooms" />
+        <activity
+            android:name="com.example.hp.mycity.My_City7"
+            android:label="Officials" />
+        <activity
+            android:name="com.example.hp.mycity.My_City8"
+            android:label="Unofficial" />
+        <activity
+            android:name="com.example.hp.mycity.My_City9"
+            android:label="Hotels And Restaurant" />
+        <activity
+            android:name="com.example.hp.mycity.My_City10"
+            android:label="Banks" />
+        <activity
+            android:name="com.example.hp.mycity.My_City11"
+            android:label="Survey" />
+        <activity android:name="com.example.hp.mycity.LoginActivity" />
+        <activity android:name="com.example.hp.mycity.LocationActivity" />
+        <activity android:name="com.example.hp.mycity.schoollist" />
+        <activity android:name="com.example.hp.mycity.collegelist" />
+        <activity android:name="com.example.hp.mycity.hospitallist" />
+        <activity android:name="com.example.hp.mycity.medstorelist" />
+        <activity android:name="com.example.hp.mycity.bloodlist" />
+        <activity android:name="com.example.hp.mycity.zoolist" />
+        <activity android:name="com.example.hp.mycity.planetlist" />
+        <activity android:name="com.example.hp.mycity.museumlist" />
+        <activity android:name="com.example.hp.mycity.monulist" />
+        <activity android:name="com.example.hp.mycity.airlist" />
+        <activity android:name="com.example.hp.mycity.buslist" />
+        <activity android:name="com.example.hp.mycity.raillist" />
+        <activity android:name="com.example.hp.mycity.templist" />
+        <activity android:name="com.example.hp.mycity.moslist" />
+        <activity android:name="com.example.hp.mycity.gurulist" />
+        <activity android:name="com.example.hp.mycity.churchlist" />
+        <activity android:name="com.example.hp.mycity.cirlist" />
+        <activity android:name="com.example.hp.mycity.courtlist" />
+        <activity android:name="com.example.hp.mycity.munlist" />
+        <activity android:name="com.example.hp.mycity.policelist" />
+        <activity android:name="com.example.hp.mycity.oldlist" />
+        <activity android:name="com.example.hp.mycity.orphlist" />
+        <activity android:name="com.example.hp.mycity.hotlist" />
+        <activity android:name="com.example.hp.mycity.guestlist" />
+        <activity android:name="com.example.hp.mycity.restlist" />
+        <activity android:name="com.example.hp.mycity.banklist" />
+        <activity android:name="com.example.hp.mycity.atmlist" />
+        <activity android:name="com.example.hp.mycity.poplist" />
+        <activity android:name="com.example.hp.mycity.arealist" />
+        <activity android:name="com.example.hp.mycity.litlist" />
+        <activity
+            android:name="com.google.firebase.auth.internal.FederatedSignInActivity"
+            android:excludeFromRecents="true"
+            android:exported="true"
+            android:launchMode="singleTask"
+            android:permission="com.google.firebase.auth.api.gms.permission.LAUNCH_FEDERATED_SIGN_IN"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+
+        <service
+            android:name="com.google.firebase.components.ComponentDiscoveryService"
+            android:exported="false" >
+            <meta-data
+                android:name="com.google.firebase.components:com.google.firebase.auth.FirebaseAuthRegistrar"
+                android:value="com.google.firebase.components.ComponentRegistrar" />
+            <meta-data
+                android:name="com.google.firebase.components:com.google.firebase.analytics.connector.internal.AnalyticsConnectorRegistrar"
+                android:value="com.google.firebase.components.ComponentRegistrar" />
+            <meta-data
+                android:name="com.google.firebase.components:com.google.firebase.iid.Registrar"
+                android:value="com.google.firebase.components.ComponentRegistrar" />
+        </service>
+
+        <activity
+            android:name="com.google.android.gms.auth.api.signin.internal.SignInHubActivity"
+            android:excludeFromRecents="true"
+            android:exported="false"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+        <!--
+            Service handling Google Sign-In user revocation. For apps that do not integrate with
+            Google Sign-In, this service will never be started.
+        -->
+        <service
+            android:name="com.google.android.gms.auth.api.signin.RevocationBoundService"
+            android:exported="true"
+            android:permission="com.google.android.gms.auth.api.signin.permission.REVOCATION_NOTIFICATION" />
+
+        <provider
+            android:name="com.squareup.picasso.PicassoProvider"
+            android:authorities="com.example.hp.mycity.com.squareup.picasso"
+            android:exported="false" /> <!-- Needs to be explicitly declared on P+ -->
+        <uses-library
+            android:name="org.apache.http.legacy"
+            android:required="false" />
+
+        <receiver
+            android:name="com.google.android.gms.measurement.AppMeasurementReceiver"
+            android:enabled="true"
+            android:exported="false" >
+        </receiver>
+        <receiver
+            android:name="com.google.android.gms.measurement.AppMeasurementInstallReferrerReceiver"
+            android:enabled="true"
+            android:exported="true"
+            android:permission="android.permission.INSTALL_PACKAGES" >
+            <intent-filter>
+                <action android:name="com.android.vending.INSTALL_REFERRER" />
+            </intent-filter>
+        </receiver>
+
+        <service
+            android:name="com.google.android.gms.measurement.AppMeasurementService"
+            android:enabled="true"
+            android:exported="false" />
+        <service
+            android:name="com.google.android.gms.measurement.AppMeasurementJobService"
+            android:enabled="true"
+            android:exported="false"
+            android:permission="android.permission.BIND_JOB_SERVICE" />
+
+        <receiver
+            android:name="com.google.firebase.iid.FirebaseInstanceIdReceiver"
+            android:exported="true"
+            android:permission="com.google.android.c2dm.permission.SEND" >
+            <intent-filter>
+                <action android:name="com.google.android.c2dm.intent.RECEIVE" />
+            </intent-filter>
+        </receiver>
+        <!--
+             FirebaseInstanceIdService performs security checks at runtime,
+             no need for explicit permissions despite exported="true"
+        -->
+        <service
+            android:name="com.google.firebase.iid.FirebaseInstanceIdService"
+            android:exported="true" >
+            <intent-filter android:priority="-500" >
+                <action android:name="com.google.firebase.INSTANCE_ID_EVENT" />
+            </intent-filter>
+        </service>
+
+        <activity
+            android:name="com.google.android.gms.common.api.GoogleApiActivity"
+            android:exported="false"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+
+        <provider
+            android:name="com.google.firebase.provider.FirebaseInitProvider"
+            android:authorities="com.example.hp.mycity.firebaseinitprovider"
+            android:exported="false"
+            android:initOrder="100" />
+
+        <meta-data
+            android:name="com.google.android.gms.version"
+            android:value="@integer/google_play_services_version" />
+        <meta-data
+            android:name="android.support.VERSION"
+            android:value="26.1.0" />
+
+        <provider
+            android:name="com.android.tools.ir.server.InstantRunContentProvider"
+            android:authorities="com.example.hp.mycity.com.android.tools.ir.server.InstantRunContentProvider"
+            android:multiprocess="true" />
+    </application>
+
+</manifest>

@@ -50,6 +50,11 @@ public class MainActivity extends AppCompatActivity {
                     return true;
                 }
             };
+    public void clickNearByMe(View view)
+    {
+        Intent intent=new Intent ( getApplicationContext (),MapsActivity.class );
+        startActivity ( intent );
+    }
     public void clickEducation(View view){
         Intent intent=new Intent(getApplicationContext(), My_City2.class);
         startActivity(intent);

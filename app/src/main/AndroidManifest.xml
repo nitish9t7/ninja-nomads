@@ -13,17 +13,17 @@
     <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
     <uses-feature android:name="android.hardware.location.gps" android:required="true"/>
 
-        <application
-            android:allowBackup="true"
-            android:fullBackupContent="true"
-            android:icon="@mipmap/ic_launcher"
-            android:label="My City"
-            android:roundIcon="@mipmap/ic_launcher_round"
-            android:supportsRtl="true"
-            android:theme="@style/AppTheme">
+    <application
+        android:allowBackup="true"
+        android:fullBackupContent="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="My City"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
         <meta-data
             android:name="com.google.android.geo.API_KEY"
-            android:value="AIzaSyBzHJMTV7v2m-eaRPECW2WXalN4gRsOkIU" />
+            android:value="AIzaSyDUJHv0OIGVAYvBRK0q6FuNyDNvX0ccMmQ" />
 
         <activity android:name=".My_CityHome"
             >
@@ -51,8 +51,10 @@
 
             </intent-filter>
         </activity>
+        <activity
+            android:name=".MapsActivity"/>
 
-            <activity
+        <activity
             android:name=".My_City2"
             android:label="Education" />
         <activity
