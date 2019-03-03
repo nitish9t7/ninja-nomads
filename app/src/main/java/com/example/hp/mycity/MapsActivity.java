@@ -128,7 +128,7 @@ GoogleApiClient.OnConnectionFailedListener, LocationListener {
         MarkerOptions markerOptions = new MarkerOptions ();
         markerOptions.position(latLng);
         markerOptions.title("Current Location");
-        markerOptions.icon( BitmapDescriptorFactory.defaultMarker( BitmapDescriptorFactory.HUE_BLUE));
+        markerOptions.icon( BitmapDescriptorFactory.defaultMarker( BitmapDescriptorFactory.HUE_RED));
         currentLocationmMarker = mMap.addMarker(markerOptions);
         mMap.moveCamera( CameraUpdateFactory.newLatLng(latLng));
         mMap.animateCamera( CameraUpdateFactory.zoomBy(10));
