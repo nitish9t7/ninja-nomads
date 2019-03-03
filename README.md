@@ -10,6 +10,7 @@ Intended to provide B2C solutions for all our users, our app gets updated with i
 
 ### Installation & Build process :
 Android Studio will be required to build the repository which could be further executed on Emulator of Minimum SDK 23.
+API key has to be changed with every authorisation.
 
 ### Other Resources:
 * Firebase
