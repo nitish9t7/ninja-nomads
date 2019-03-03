@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:background="@android:color/white"
+    android:orientation="vertical"
+    android:padding="24dp">
+
+
+    <Button
+        android:id="@+id/but_zoo"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+
+        android:layout_marginBottom="16dp"
+        android:background="@color/colorPrimary"
+        android:paddingEnd="24dp"
+        android:paddingStart="24dp"
+        android:text="zoo"
+        android:textColor="#FFFFFF"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:onClick="clickZoo"/>
+    <Button
+        android:id="@+id/but_museum"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:layout_below="@+id/but_zoo"
+        android:layout_marginBottom="16dp"
+        android:background="@color/colorPrimary"
+        android:paddingEnd="24dp"
+        android:paddingStart="24dp"
+        android:text="museum"
+        android:textColor="#FFFFFF"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:onClick="clickMuseum"/>
+    <Button
+        android:id="@+id/but_planet"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:layout_below="@+id/but_museum"
+        android:layout_marginBottom="16dp"
+        android:background="@color/colorPrimary"
+        android:paddingEnd="24dp"
+        android:paddingStart="24dp"
+        android:text="planetarium"
+        android:textColor="#FFFFFF"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:onClick="clickPlanet"/>
+    <Button
+        android:id="@+id/but_monument"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:layout_below="@+id/but_planet"
+        android:layout_marginBottom="16dp"
+        android:background="@color/colorPrimary"
+        android:paddingEnd="24dp"
+        android:paddingStart="24dp"
+        android:text="monument"
+        android:textColor="#FFFFFF"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:onClick="clickMonument"/>
+
+</LinearLayout>
+
+

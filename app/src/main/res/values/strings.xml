@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">My City</string>
+    <string name="firebase_login">My City</string>
+    <string name="login_with_google">Login With Google</string>
+    <string name="City">Noida</string>
+
+</resources>

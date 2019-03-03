@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <item name="txtCancel" type="id" />
+    <item name="txtSetting" type="id" />
+    <item name="imgLocation" type="id" />
+</resources>
